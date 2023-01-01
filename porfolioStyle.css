@@ -1,0 +1,46 @@
+header{
+	background-color: blue;
+	position: relative;
+	height: 60px;
+}
+
+.headLogo{
+	position: absolute;
+	background-color: yellow;
+}
+
+.porfolio-menu{
+	background-color: green;
+	position: absolute;
+	left: 80%;
+}
+
+.about{
+	background-color: red;
+	position: relative;
+	height: 1200px;
+}
+
+.skills{
+	background-color: pink;
+	position: relative;
+	height: 500px;
+}
+
+.projects{
+	background-color: skyblue;
+	position: relative;
+	height: 800px;
+}
+
+.contact-me{
+	background-color: darkcyan;
+	position: relative;
+	height: 600px;
+}
+
+footer{
+	background-color: blue;
+	position: relative;
+	height: 200px;
+}
