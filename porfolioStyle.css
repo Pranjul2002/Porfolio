@@ -1,30 +1,99 @@
+body{
+	margin: 0;
+}
 header{
-	background-color: blue;
+	background-color: cyan;
 	position: relative;
 	height: 60px;
 }
 
 .headLogo{
 	position: absolute;
-	background-color: yellow;
+	top: 15px;
+	left: 200px;
+	font-size: 30px;
+	font-family: serif;
 }
 
 .porfolio-menu{
-	background-color: green;
 	position: absolute;
-	left: 80%;
+	left: 75%;
+	top: 15px;
+	font-size: 25px;
+	font-family: serif;
 }
 
 .about{
-	background-color: red;
 	position: relative;
 	height: 1200px;
 }
+
+.nameArea{
+	position: absolute;
+	width: 734px;
+	height: 500px;
+	top: 10px;
+	left: 50px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.name-top{
+	font-size: 50px;
+}
+
+.name{
+	font-size: 80px;
+	font-family: cursive;
+}
+
+.img1{
+	background-image: url("images/img1.png");
+	position: absolute;
+	left: 1100px;
+	width: 734px;
+	height: 650px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+
+
+.info-about-me{
+	position: absolute;
+	left: 1080px;
+	width: 800px;
+	height: 400px;
+	top: 700px;
+}
+
+.img2{
+	background-color: yellow;
+	background-image: url("images/img2.png");
+	position: absolute;
+	height: 660px;
+	width: 1000px;
+	top: 530px;
+	left: 50px;
+	border-radius: 20px;
+}
+
 
 .skills{
 	background-color: pink;
 	position: relative;
 	height: 500px;
+}
+
+.languages{
+
+}
+
+.framework{
+
+}
+
+.databases{
+
 }
 
 .projects{
