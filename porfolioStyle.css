@@ -28,6 +28,15 @@ header{
 	height: 1200px;
 }
 
+.img5{
+	background-image: url("images/blob.svg");
+	position: absolute;
+	width: 1000px;
+	height: 1000px;
+	top: 500px;
+	left: 900px;
+}
+
 .nameArea{
 	position: absolute;
 	width: 734px;
@@ -60,10 +69,11 @@ header{
 
 .info-about-me{
 	position: absolute;
-	left: 1080px;
-	width: 800px;
-	height: 400px;
-	top: 700px;
+	left: 1160px;
+	width: 700px;
+	height: 300px;
+	top: 800px;
+	font-size: 25px;
 }
 
 .img2{
@@ -79,37 +89,127 @@ header{
 
 
 .skills{
-	background-color: pink;
 	position: relative;
 	height: 500px;
 }
 
+.Skill-top{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
 .languages{
-
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 274px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+	text-align: center;
 }
 
-.framework{
-
+div.languages:hover{
+	background-color: #1fa682;
 }
+
+.frameworks{
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 822px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+	text-align: center;
+}
+
+div.frameworks:hover{
+	background-color: #1fa682;
+}
+
 
 .databases{
-
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 1370px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+	text-align: center;
 }
+
+
+div.databases:hover{
+	background-color: #1fa682;
+}
+
 
 .projects{
 	background-color: skyblue;
 	position: relative;
 	height: 800px;
+	margin-top: 20px;
+}
+
+.projects-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
 }
 
 .contact-me{
-	background-color: darkcyan;
+	background-color: ;
 	position: relative;
 	height: 600px;
 }
 
-footer{
-	background-color: blue;
-	position: relative;
-	height: 200px;
+.contact-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
 }
+
+.img3{
+	background-image: url("images/img_tree.gif");
+	position: absolute;
+	width: 200px;
+	height: 358px;
+	top: 130px;
+	left: 250px;
+}
+
+.img4{
+	background-image: url("images/blob.svg");
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 80px;
+	left: 30px;
+}
+
+footer{
+	background-color: #0f273b;
+	position: relative;
+	height: 400px;
+}
+
+.footer-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
