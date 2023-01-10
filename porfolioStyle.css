@@ -28,6 +28,15 @@ header{
 	height: 1200px;
 }
 
+.img5{
+	background-image: url("images/blob.svg");
+	position: absolute;
+	width: 1000px;
+	height: 1000px;
+	top: 500px;
+	left: 900px;
+}
+
 .nameArea{
 	position: absolute;
 	width: 734px;
@@ -60,10 +69,11 @@ header{
 
 .info-about-me{
 	position: absolute;
-	left: 1080px;
-	width: 800px;
-	height: 400px;
-	top: 700px;
+	left: 1160px;
+	width: 700px;
+	height: 300px;
+	top: 800px;
+	font-size: 25px;
 }
 
 .img2{
@@ -79,37 +89,226 @@ header{
 
 
 .skills{
-	background-color: pink;
 	position: relative;
 	height: 500px;
 }
 
+.Skill-top{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
 .languages{
-
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 274px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
 }
 
-.framework{
-
+div.languages:hover{
+	background-color: #1fa682;
 }
+
+.languages-top{
+	position: absolute;
+	font-size: 30px;
+	font-family: ;
+	left: 58px;
+	top: 15px;
+}
+
+.languages-list{
+	position: absolute;
+	font-size: 20px;
+	font-family: ;
+	left: 90px;
+	top: 65px;
+}
+
+.frameworks{
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 822px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
+}
+
+div.frameworks:hover{
+	background-color: #1fa682;
+}
+
+.frameworks-top{
+	position: absolute;
+	font-size: 30px;
+	font-family: ;
+	left: 52px;
+	top: 15px;
+}
+
+.frameworks-list{
+	position: absolute;
+	font-size: 20px;
+	font-family: ;
+	left: 90px;
+	top: 65px;
+}
+
 
 .databases{
-
+	background-color: #0d916e;
+	position: absolute;
+	width: 274px;
+	height: 350px;
+	left: 1370px;
+	top: 150px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px;
 }
+
+
+div.databases:hover{
+	background-color: #1fa682;
+}
+
+.databases-top{
+	position: absolute;
+	font-size: 30px;
+	font-family: ;
+	left: 58px;
+	top: 15px;
+}
+
+.databases-list{
+	position: absolute;
+	font-size: 20px;
+	font-family: ;
+	left: 68px;
+	top: 65px;
+}
+
+
 
 .projects{
 	background-color: skyblue;
 	position: relative;
 	height: 800px;
+	margin-top: 20px;
+}
+
+.projects-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
 }
 
 .contact-me{
-	background-color: darkcyan;
+	background-color: ;
 	position: relative;
 	height: 600px;
 }
 
+.contact-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
+.img3{
+	background-image: url("images/img_tree.gif");
+	position: absolute;
+	width: 200px;
+	height: 358px;
+	top: 130px;
+	left: 250px;
+}
+
+.img4{
+	background-image: url("images/blob.svg");
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 80px;
+	left: 30px;
+}
+
 footer{
-	background-color: blue;
+	background-color: #0f273b;
 	position: relative;
-	height: 200px;
+	height: 400px;
+}
+
+.footer-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
+.social{
+	position: absolute;
+	background-color: cyan;
+	left: 550px;
+	top: 250px;
+	width: 800px;
+	height: 80px;
+	border-radius: 20px;
+	opacity: 0.4;
+}
+
+div.social:hover{
+	opacity: 1.0;
+	border: solid;
+}
+
+
+.github img{
+	position: absolute;
+	left: 80px;
+	top: 10px;
+	opacity: 1.0;
+	width: 60px;
+	height: 60px;
+	opacity: 1.0;
+}
+
+.linkedin img{
+	position: absolute;
+	left: 280px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	opacity: 1.0;
+}
+
+.twitter img{
+	position: absolute;
+	left: 480px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	opacity: 1.0;
+}
+
+.insta img{
+	position: absolute;
+	left: 680px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	opacity: 1.0;
 }
