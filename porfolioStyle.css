@@ -119,7 +119,6 @@ div.languages:hover{
 .languages-top{
 	position: absolute;
 	font-size: 30px;
-	font-family: ;
 	left: 58px;
 	top: 15px;
 }
@@ -127,7 +126,6 @@ div.languages:hover{
 .languages-list{
 	position: absolute;
 	font-size: 20px;
-	font-family: ;
 	left: 90px;
 	top: 65px;
 }
@@ -150,7 +148,6 @@ div.frameworks:hover{
 .frameworks-top{
 	position: absolute;
 	font-size: 30px;
-	font-family: ;
 	left: 52px;
 	top: 15px;
 }
@@ -158,7 +155,6 @@ div.frameworks:hover{
 .frameworks-list{
 	position: absolute;
 	font-size: 20px;
-	font-family: ;
 	left: 90px;
 	top: 65px;
 }
@@ -183,7 +179,6 @@ div.databases:hover{
 .databases-top{
 	position: absolute;
 	font-size: 30px;
-	font-family: ;
 	left: 58px;
 	top: 15px;
 }
@@ -191,7 +186,6 @@ div.databases:hover{
 .databases-list{
 	position: absolute;
 	font-size: 20px;
-	font-family: ;
 	left: 68px;
 	top: 65px;
 }
@@ -214,7 +208,6 @@ div.databases:hover{
 }
 
 .contact-me{
-	background-color: ;
 	position: relative;
 	height: 600px;
 }
@@ -280,10 +273,8 @@ div.social:hover{
 	position: absolute;
 	left: 80px;
 	top: 10px;
-	opacity: 1.0;
 	width: 60px;
 	height: 60px;
-	opacity: 1.0;
 }
 
 .linkedin img{
@@ -292,7 +283,6 @@ div.social:hover{
 	top: 10px;
 	width: 60px;
 	height: 60px;
-	opacity: 1.0;
 }
 
 .twitter img{
@@ -301,7 +291,6 @@ div.social:hover{
 	top: 10px;
 	width: 60px;
 	height: 60px;
-	opacity: 1.0;
 }
 
 .insta img{
@@ -310,5 +299,4 @@ div.social:hover{
 	top: 10px;
 	width: 60px;
 	height: 60px;
-	opacity: 1.0;
 }
