@@ -130,6 +130,11 @@ div.languages:hover{
 	top: 65px;
 }
 
+div.languages:hover{
+	background-color: #1fa682;
+
+}
+
 .frameworks{
 	background-color: #0d916e;
 	position: absolute;
@@ -189,6 +194,7 @@ div.databases:hover{
 	left: 68px;
 	top: 65px;
 }
+
 
 
 
@@ -300,3 +306,12 @@ div.social:hover{
 	width: 60px;
 	height: 60px;
 }
+
+.footer-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
