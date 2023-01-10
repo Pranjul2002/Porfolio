@@ -110,11 +110,29 @@ header{
 	top: 150px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px;
-	text-align: center;
 }
 
 div.languages:hover{
 	background-color: #1fa682;
+}
+
+.languages-top{
+	position: absolute;
+	font-size: 30px;
+	left: 58px;
+	top: 15px;
+}
+
+.languages-list{
+	position: absolute;
+	font-size: 20px;
+	left: 90px;
+	top: 65px;
+}
+
+div.languages:hover{
+	background-color: #1fa682;
+
 }
 
 .frameworks{
@@ -126,11 +144,24 @@ div.languages:hover{
 	top: 150px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px;
-	text-align: center;
 }
 
 div.frameworks:hover{
 	background-color: #1fa682;
+}
+
+.frameworks-top{
+	position: absolute;
+	font-size: 30px;
+	left: 52px;
+	top: 15px;
+}
+
+.frameworks-list{
+	position: absolute;
+	font-size: 20px;
+	left: 90px;
+	top: 65px;
 }
 
 
@@ -143,13 +174,28 @@ div.frameworks:hover{
 	top: 150px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px;
-	text-align: center;
 }
 
 
 div.databases:hover{
 	background-color: #1fa682;
 }
+
+.databases-top{
+	position: absolute;
+	font-size: 30px;
+	left: 58px;
+	top: 15px;
+}
+
+.databases-list{
+	position: absolute;
+	font-size: 20px;
+	left: 68px;
+	top: 65px;
+}
+
+
 
 
 .projects{
@@ -168,7 +214,6 @@ div.databases:hover{
 }
 
 .contact-me{
-	background-color: ;
 	position: relative;
 	height: 600px;
 }
@@ -203,6 +248,63 @@ footer{
 	background-color: #0f273b;
 	position: relative;
 	height: 400px;
+}
+
+.footer-head{
+	position: absolute;
+	left: 900px;
+	top: 50px;
+	font-size: 40px;
+	font-family: cursive;
+}
+
+.social{
+	position: absolute;
+	background-color: cyan;
+	left: 550px;
+	top: 250px;
+	width: 800px;
+	height: 80px;
+	border-radius: 20px;
+	opacity: 0.4;
+}
+
+div.social:hover{
+	opacity: 1.0;
+	border: solid;
+}
+
+
+.github img{
+	position: absolute;
+	left: 80px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.linkedin img{
+	position: absolute;
+	left: 280px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.twitter img{
+	position: absolute;
+	left: 480px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+}
+
+.insta img{
+	position: absolute;
+	left: 680px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
 }
 
 .footer-head{
