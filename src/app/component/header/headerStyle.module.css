@@ -1,0 +1,145 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.headerContainer {
+  max-width: 1000px;
+  margin: 25px auto 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+
+.menuOptionButtonWrapper {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.stroke {
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Default widths */
+.stroke1 {
+  width: 120%;
+}
+
+.stroke2 {
+  width: 50%;
+}
+
+.stroke3 {
+  width: 80%;
+}
+
+.menuOptionButtonWrapper:hover .stroke1 {
+  background-color: rgb(187, 187, 187);
+  width: 80%;
+}
+
+.menuOptionButtonWrapper:hover .stroke2 {
+  background-color: rgb(187, 187, 187);
+  width: 120%;
+}
+
+.menuOptionButtonWrapper:hover .stroke3 {
+  background-color: rgb(187, 187, 187);
+  width: 50%;
+}
+
+
+/* =========================
+   OPEN (X ANIMATION)
+========================= */
+
+/* Scope directly to wrapper for reliability */
+
+.menuOptionButtonWrapper.open .stroke1 {
+  width: 100%;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuOptionButtonWrapper.open .stroke2 {
+  opacity: 0;
+}
+
+.menuOptionButtonWrapper.open .stroke3 {
+  width: 100%;
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Slight thickness when open */
+.menuOptionButtonWrapper.open .stroke {
+  height: 3px;
+}
+
+/* Color change when open + hover */
+.menuOptionButtonWrapper.open:hover .stroke {
+  background-color: #E0F11F;
+}
+
+
+
+.menuOptionsBox {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+}
+
+/* Open state */
+.menuOptionsBox.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.menuOptionsBox ul {
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  background-color: #121212;
+}
+
+.menuOptionsBox li {
+  padding: 8px 20px;
+}
+
+
+.menuOptionLink {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.menuOptionLink:hover {
+  color: #E0F11F;
+}
