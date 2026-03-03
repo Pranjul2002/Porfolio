@@ -38,13 +38,13 @@ const Header = () => {
           }`}
         >
           <ul>
-            <li><Link href="/" className={style.menuOptionLink}>HOME</Link></li>
-            <li><Link href="/projects" className={style.menuOptionLink}>PROJECTS</Link></li>
-            <li><Link href="/experience" className={style.menuOptionLink}>EXPERIENCE</Link></li>
-            <li><Link href="/skills" className={style.menuOptionLink}>SKILLS</Link></li>
-            <li><Link href="/education" className={style.menuOptionLink}>EDUCATION</Link></li>
-            <li><Link href="/about" className={style.menuOptionLink}>ABOUT</Link></li>
-            <li><Link href="/contact" className={style.menuOptionLink}>CONTACT</Link></li>
+            <li><Link href="/" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>HOME</Link></li>
+            <li><Link href="/projects" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>PROJECTS</Link></li>
+            <li><Link href="/experience" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>EXPERIENCE</Link></li>
+            <li><Link href="/skills" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>SKILLS</Link></li>
+            <li><Link href="/education" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>EDUCATION</Link></li>
+            <li><Link href="/about" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>ABOUT</Link></li>
+            <li><Link href="/contact" className={style.menuOptionLink} onClick={()=>setIsOpen(false)}>CONTACT</Link></li>
           </ul>
         </div>
 
