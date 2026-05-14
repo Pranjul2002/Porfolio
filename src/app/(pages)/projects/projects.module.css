@@ -105,4 +105,8 @@
   .projectCard {
     height: 250px;
   }
+
+  .projectTitle{
+    opacity: 1;
+  }
 }
