@@ -1,6 +1,6 @@
 "use client";
 
-import Star from "../component/star/star";
+import Star from "@/component/star/star";
 import Link from "next/link";
 import style from "./projects.module.css";
 import { Big_Shoulders } from "next/font/google";
@@ -26,9 +26,9 @@ export default function ProjectsPage() {
 
         <Link href="https://edu-tech-rouge.vercel.app/" target="_blank">
           <div className={style.projectCard}>
-            <div className={style.projectContainer} style={{ backgroundImage: "url('/edutech.png')" }}>
+            <div className={style.projectContainer} style={{ backgroundImage: "url('/ultima.png')", backgroundSize:"100%"}}>
             </div>
-            <div className={style.projectTitle}>EduTech</div>
+            <div className={style.projectTitle}>Ultima</div>
           </div>
         </Link>
 

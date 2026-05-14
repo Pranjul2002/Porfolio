@@ -1,0 +1,442 @@
+.aboutPageWrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.aboutPageBanner {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+
+    font-size: clamp(80px, 14vw, 220px);
+    font-weight: 900;
+
+    letter-spacing: 4px;
+    text-align: center;
+
+    color: #E0F11F;
+}
+
+.star {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.aboutMeAndMyImgWrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 150px;
+
+    padding: 0 20px;
+}
+
+.aboutMeAndMyImg {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+/* IMAGE */
+
+.myImgWrapper {
+    position: relative;
+
+    width: 400px;
+    height: 500px;
+
+    flex-shrink: 0;
+
+    background: transparent;
+}
+
+.myImg {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background-image: url('/images/about-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.myImgBG {
+    position: absolute;
+
+    top: 60px;
+    left: 20px;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 8px;
+
+    background-color: #E0F11F;
+
+    z-index: 1;
+}
+
+/* TEXT */
+
+.aboutMe {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+
+    background: transparent;
+}
+
+.aboutMe p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 20px;
+    line-height: 1.9;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background: transparent;
+}
+
+.aboutMe .p1 {
+    color: rgb(150, 150, 150);
+
+    font-size: 25px;
+    line-height: 1.7;
+    word-spacing: 1px;
+    font-weight: 200;
+}
+
+.aboutMe .p2 {
+    color: rgb(230, 230, 230);
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skillsWrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 250px;
+
+    padding: 0 20px 120px;
+
+    background: transparent;
+}
+
+.skillsGrid {
+    width: 100%;
+    max-width: 950px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 34px;
+
+    background: transparent;
+}
+
+/* CARD */
+
+.skillCard {
+    background-color: #E0F11F;
+
+    border-radius: 8px;
+    padding: 28px 15px;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.skillCard:hover {
+    transform: translateY(-8px);
+}
+
+/* REMOVE BLACK BACKGROUNDS */
+
+.skillLeft,
+.skillRight,
+.skillLeft h3,
+.skillLeft p,
+.skillRight span {
+    background: transparent !important;
+}
+
+/* LEFT SIDE */
+
+.skillLeft {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.skillLeft h3 {
+    margin: 0;
+
+    color: #000;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.skillLeft p {
+    margin-top: 12px;
+
+    color: #000;
+
+    font-size: 18px;
+    line-height: 1.4;
+
+    max-width: 220px;
+}
+
+/* DIVIDER */
+
+.skillDivider {
+    width: 1px;
+    height: 70px;
+
+    
+}
+
+/* RIGHT SIDE */
+
+.skillRight {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillRight span {
+    font-size: 82px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    color: rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+    .aboutMeAndMyImg {
+        gap: 60px;
+    }
+
+    .myImgWrapper {
+        width: 340px;
+        height: 440px;
+    }
+
+    .aboutMe .p1 {
+        font-size: 24px;
+    }
+
+    .aboutMe p {
+        font-size: 17px;
+    }
+
+    .skillsGrid {
+        gap: 24px;
+    }
+
+    .skillCard {
+        padding: 24px 20px;
+    }
+
+    .skillLeft h3 {
+        font-size: 34px;
+    }
+
+    .skillLeft p {
+        font-size: 16px;
+    }
+
+    .skillRight span {
+        font-size: 66px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .aboutPageWrapper {
+        padding-top: 80px;
+    }
+
+    .aboutMeAndMyImgWrapper {
+        margin-top: 100px;
+    }
+
+    .aboutMeAndMyImg {
+        flex-direction: column;
+
+        gap: 70px;
+    }
+
+    .myImgWrapper {
+        width: 100%;
+        max-width: 320px;
+        height: 420px;
+    }
+
+    .myImgBG {
+        top: 20px;
+        left: 20px;
+    }
+
+    .aboutMe {
+        width: 100%;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+    .aboutMe .p1 {
+        font-size: 22px;
+    }
+
+    .aboutMe p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .skillsWrapper {
+        margin-top: 120px;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .skillCard {
+        min-height: 120px;
+    }
+
+    .skillLeft h3 {
+        font-size: 30px;
+    }
+
+    .skillRight span {
+        font-size: 56px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .title {
+        letter-spacing: 2px;
+    }
+
+    .aboutMeAndMyImg {
+        gap: 50px;
+    }
+
+    .myImgWrapper {
+        max-width: 280px;
+        height: 360px;
+    }
+
+    .aboutMe .p1 {
+        font-size: 18px;
+    }
+
+    .aboutMe p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .skillsWrapper {
+        padding-bottom: 80px;
+    }
+
+    .skillCard {
+        padding: 20px 18px;
+
+        min-height: 110px;
+    }
+
+    .skillLeft h3 {
+        font-size: 26px;
+    }
+
+    .skillLeft p {
+        font-size: 14px;
+    }
+
+    .skillDivider {
+        height: 50px;
+    }
+
+    .skillRight span {
+        font-size: 44px;
+    }
+}

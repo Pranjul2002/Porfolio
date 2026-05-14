@@ -11,30 +11,47 @@
   margin: 25px auto 0 auto;
   padding: 18px 20px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
 
+/* =========================
+   MENU BUTTON
+========================= */
 
 .menuOptionButtonWrapper {
-  width: 30px;
-  height: 22px;
+  width: 32px;
+  height: 24px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+
   cursor: pointer;
+
   z-index: 1100;
 }
 
 .stroke {
+  width: 100%;
   height: 2px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+
+  background-color: white;
+  border-radius: 999px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    width 0.3s ease,
+    background-color 0.3s ease;
 }
 
-/* Default widths */
+/* Initial widths */
+
 .stroke1 {
   width: 120%;
 }
@@ -47,31 +64,30 @@
   width: 80%;
 }
 
+/* Hover Animation */
+
 .menuOptionButtonWrapper:hover .stroke1 {
-  background-color: rgb(187, 187, 187);
   width: 80%;
+  background-color: rgb(187, 187, 187);
 }
 
 .menuOptionButtonWrapper:hover .stroke2 {
-  background-color: rgb(187, 187, 187);
   width: 120%;
+  background-color: rgb(187, 187, 187);
 }
 
 .menuOptionButtonWrapper:hover .stroke3 {
-  background-color: rgb(187, 187, 187);
   width: 50%;
+  background-color: rgb(187, 187, 187);
 }
 
-
 /* =========================
-   OPEN (X ANIMATION)
+   OPEN STATE
 ========================= */
-
-/* Scope directly to wrapper for reliability */
 
 .menuOptionButtonWrapper.open .stroke1 {
   width: 100%;
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: translateY(11px) rotate(45deg);
 }
 
 .menuOptionButtonWrapper.open .stroke2 {
@@ -80,37 +96,45 @@
 
 .menuOptionButtonWrapper.open .stroke3 {
   width: 100%;
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: translateY(-11px) rotate(-45deg);
 }
 
-/* Slight thickness when open */
 .menuOptionButtonWrapper.open .stroke {
   height: 3px;
 }
 
-/* Color change when open + hover */
 .menuOptionButtonWrapper.open:hover .stroke {
   background-color: #E0F11F;
 }
 
-
+/* =========================
+   MENU BOX
+========================= */
 
 .menuOptionsBox {
   position: absolute;
+
   top: 70px;
   left: 0;
-  width: 250px;
-  border-radius: 8px;
+
+  width: 260px;
+
+  border-radius: 12px;
+
   overflow: hidden;
 
-  transform: translateY(-20px);
+  background-color: #121212;
+
+  transform: translateY(-15px);
   opacity: 0;
   visibility: hidden;
 
-  transition: all 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
-/* Open state */
 .menuOptionsBox.open {
   transform: translateY(0);
   opacity: 1;
@@ -119,27 +143,49 @@
 
 .menuOptionsBox ul {
   list-style: none;
-  padding: 15px 0;
   margin: 0;
-  background-color: #121212;
+  padding: 16px 0;
 }
 
 .menuOptionsBox li {
-  padding: 8px 20px;
+  padding: 10px 22px;
 }
 
-
 .menuOptionLink {
+  display: block;
+
   text-decoration: none;
+
   color: white;
+
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 1px;
-  display: block;
-  width: 100%;
-  transition: color 0.3s ease;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .menuOptionLink:hover {
   color: #E0F11F;
+  transform: translateX(4px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 16px;
+  }
+
+  .menuOptionsBox {
+    width: 220px;
+  }
+
+  .menuOptionLink {
+    font-size: 26px;
+  }
 }

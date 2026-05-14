@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import Star from "./component/star/star";
+import Star from "@/component/star/star";
 import { Big_Shoulders, DM_Sans } from "next/font/google";
 
 const bigShoulders = Big_Shoulders({
